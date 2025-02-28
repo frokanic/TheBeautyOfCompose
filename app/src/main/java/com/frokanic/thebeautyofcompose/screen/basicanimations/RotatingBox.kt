@@ -1,5 +1,6 @@
 package com.frokanic.thebeautyofcompose.screen.basicanimations
 
+import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.RepeatMode
 import androidx.compose.animation.core.animateFloat
 import androidx.compose.animation.core.infiniteRepeatable
@@ -27,7 +28,7 @@ fun RotatingBox() {
         initialValue = 0f,
         targetValue = 360f,
         animationSpec = infiniteRepeatable(
-            animation = tween(3_000),
+            animation = tween(3_000, easing = LinearEasing),
             repeatMode = RepeatMode.Restart
         )
     )
