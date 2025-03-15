@@ -1,4 +1,4 @@
-package com.frokanic.thebeautyofcompose.screen.basicanimations
+package com.frokanic.thebeautyofcompose.screen.basic_animations
 
 import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.RepeatMode
