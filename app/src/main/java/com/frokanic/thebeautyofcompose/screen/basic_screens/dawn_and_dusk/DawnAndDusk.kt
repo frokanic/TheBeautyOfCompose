@@ -19,6 +19,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -127,7 +128,7 @@ private fun StarRow(
     modifier: Modifier = Modifier,
     isLightTheme: Boolean
 ) {
-    var selectedRating by remember { mutableIntStateOf(-1) }
+    var selectedRating by rememberSaveable { mutableIntStateOf(-1) }
     val backgroundColor = if (isLightTheme) Color(0xFFFFFFFF) else Color(0xFF2C144D)
 
     Row(
